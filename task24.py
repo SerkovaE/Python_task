@@ -15,7 +15,7 @@ number_bushes = int(input('Введите количество кустов:  ')
 list_1 = [randint(0, 100) for _ in range(number_bushes)] ##в списке будут значения количества ягод на каждом из кустов (урожайность кустов рандомная)
 print(list_1)
 max_summ = 0
-for i in range(len(list_1)):
+for i in range(number_bushes):
     if max_summ < (list_1[i-1] + list_1[i] + list_1[i-2]):
           max_summ = list_1[i-1] + list_1[i] + list_1[i-2]
 print(max_summ)
